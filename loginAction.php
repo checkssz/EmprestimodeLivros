@@ -1,6 +1,16 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// Inclui o arquivo de carregamento de variáveis de ambiente
+require_once 'envLoader.php';
+
 // Inicia a sessão
 session_start();
+
+// Carrega as variáveis de ambiente do arquivo .env
+loadEnv(__DIR__ . '/.env');
 
 // Verifica se o formulário foi submetido
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
