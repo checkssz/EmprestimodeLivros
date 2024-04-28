@@ -23,6 +23,13 @@
             <i class="w3-xxlarge fa fa-sign-in"></i> Entrar
         </button>
     </form>
+    
+    <!-- Adicione esta seção após o formulário de login -->
+<div class="w3-container w3-center w3-margin-top">
+    <p>Não possui uma conta?</p>
+    <a href="cadastro.php" class="w3-button w3-teal w3-round-large">Cadastrar-se</a>
+</div>
+
 </div>
 </body>
 </html>
